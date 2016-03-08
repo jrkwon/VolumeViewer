@@ -208,6 +208,10 @@ int main(int argc, char *argv[])
     m_pTextActor->Delete();;
     m_pTextMapper->Delete();
 
+    pReader->Delete();
+    pWriter->Delete();
+    pSTLWriter->Delete();
+
     // TODO: there are missing pointers to be deleted. Add them.
 
     return a.exec();
